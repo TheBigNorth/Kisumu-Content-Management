@@ -1,7 +1,8 @@
 vendor/
 wordpress/
 public/wp-content/plugins/
-public/wp-content/themes/
+public/wp-content/themes/*
+!public/wp-content/themes/headless
 .vagrant/
 .env
 *.log
