@@ -10,7 +10,8 @@
     "require": {
         "johnpbloch/wordpress": "~4",
         "wpackagist-plugin/wordpress-seo": "7.*",
-        "vlucas/phpdotenv": "^2.4"
+        "vlucas/phpdotenv": "^2.4",
+        "wpackagist-plugin/custom-post-type-ui": "1.5.*"
     },
     "extra": {
         "wordpress-install-dir": "public/wordpress",
