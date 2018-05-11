@@ -11,7 +11,8 @@
         "johnpbloch/wordpress": "~4",
         "wpackagist-plugin/wordpress-seo": "7.*",
         "vlucas/phpdotenv": "^2.4",
-        "wpackagist-plugin/custom-post-type-ui": "1.5.*"
+        "wpackagist-plugin/custom-post-type-ui": "1.5.*",
+        "wpackagist-plugin/ilab-media-tools":"2.1.0"
     },
     "extra": {
         "wordpress-install-dir": "public/wordpress",
