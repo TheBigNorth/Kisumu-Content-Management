@@ -2,7 +2,7 @@ image: ubuntu:16.04
 
 before_script:
   - apt-get update
-  - apt-get install -y tzdata zip unzip
+  - apt-get install -y tzdata zip unzip software-properties-common
   - LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
   - apt-get -y update
   - apt-get -y upgrade
