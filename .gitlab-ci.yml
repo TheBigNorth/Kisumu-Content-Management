@@ -1,0 +1,8 @@
+image: ubuntu:16.04
+
+before_script:
+  - npm install -g kisumu
+
+run_provision:
+  script:
+  -  kisumu provision --inside
