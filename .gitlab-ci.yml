@@ -16,17 +16,14 @@ before_script:
   - eval $(ssh-agent -s)
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
-install:
-  script:
-    - php composer.phar install
-
-stage_deploy:
+production_deploy:
   artifacts:
     paths:
       - build/
   only:
     - provisioning
   script:
+    - php composer.phar install
     - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 -d)
     - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mkdir -p /var/www/html"
     - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mkdir -p /var/www/html_tmp"
