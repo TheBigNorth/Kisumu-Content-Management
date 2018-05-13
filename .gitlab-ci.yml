@@ -27,7 +27,7 @@ stage_deploy:
   only:
     - provisioning
   script:
-    - ssh-add <(echo "$STAGING_PRIVATE_KEY")
+    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 -d)
     - ssh -p22 $SERVER_USER@$SERVER_HOST "mkdir -p /var/www/html"
     - ssh -p22 $SERVER_USER@$SERVER_HOST "mkdir -p /var/www/html_tmp"
     - scp -P22 -r build/* $SERVER_USER@$SERVER_HOST:/var/www/html_tmp"
