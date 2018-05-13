@@ -11,7 +11,25 @@ before_script:
   - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
   - php composer-setup.php
   - php -r "unlink('composer-setup.php');"
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - mkdir -p ~/.ssh
+  - eval $(ssh-agent -s)
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
-job1:
+install:
   script:
     - php composer.phar install
+
+stage_deploy:
+  artifacts:
+    paths:
+      - build/
+  only:
+    - provisioning
+  script:
+    - ssh-add <(echo "$STAGING_PRIVATE_KEY")
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "mkdir -p /var/www/html"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "mkdir -p /var/www/html_tmp"
+    - scp -P22 -r build/* $SERVER_USER@$SERVER_HOST:/var/www/html_tmp"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "mv /var/www/html /var/www/html_old && mv /var/www/html_tmp /var/www/html"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "rm -rf /var/www/html_old"
