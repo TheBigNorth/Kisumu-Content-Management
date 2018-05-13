@@ -28,8 +28,8 @@ stage_deploy:
     - provisioning
   script:
     - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 -d)
-    - ssh -p22 $SERVER_USER@$SERVER_HOST "mkdir -p /var/www/html"
-    - ssh -p22 $SERVER_USER@$SERVER_HOST "mkdir -p /var/www/html_tmp"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mkdir -p /var/www/html"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mkdir -p /var/www/html_tmp"
     - scp -P22 -r build/* $SERVER_USER@$SERVER_HOST:/var/www/html_tmp"
-    - ssh -p22 $SERVER_USER@$SERVER_HOST "mv /var/www/html /var/www/html_old && mv /var/www/html_tmp /var/www/html"
-    - ssh -p22 $SERVER_USER@$SERVER_HOST "rm -rf /var/www/html_old"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mv /var/www/html /var/www/html_old && sudo mv /var/www/html_tmp /var/www/html"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo rm -rf /var/www/html_old"
