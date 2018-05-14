@@ -27,8 +27,8 @@ production_deploy:
     - cp .env.example .env
     - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 -d)
     - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mkdir -p /var/www/html"
-    - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mkdir -p /var/www/html_tmp"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo cp -r /var/www/html /var/www/html_tmp"
     - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo chown -R ubuntu:ubuntu /var/www"
-    - scp -P22 -r ./* $SERVER_USER@$SERVER_HOST:/var/www/html_tmp
+    - rsync -av -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress . $SERVER_USER@$SERVER_HOST:/var/www/html_tmp/
     - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mv /var/www/html /var/www/html_old && sudo mv /var/www/html_tmp /var/www/html"
     - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo rm -rf /var/www/html_old"
