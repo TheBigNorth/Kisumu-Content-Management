@@ -104,6 +104,15 @@ define('DISALLOW_FILE_MODS', true);
 define( 'WP_AUTO_UPDATE_CORE', false );
 
 /**
+ * Connects to MySQL server (db) through SSL
+ */
+define('IS_SSL_DB', filter_var(getenv('IS_SSL_DB'), FILTER_VALIDATE_BOOLEAN));
+
+if (IS_SSL_DB) {
+	define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+}
+
+/**
  * Switches on multisite editing
  */
 define( 'WP_ALLOW_MULTISITE', filter_var(getenv('ALLOW_MULTISITE'), FILTER_VALIDATE_BOOLEAN));
