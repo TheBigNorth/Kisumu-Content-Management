@@ -3,6 +3,7 @@ wordpress/
 public/wp-content/plugins/
 public/wp-content/themes/*
 !public/wp-content/themes/headless
+public/wp-content/uploads
 .vagrant/
 .env
 *.log

@@ -1,18 +1,6 @@
 <?php
 
 /**
- * Redirects to the backend - so there is no front end
- */
-function redirectToBackEnd() {
-    if( !is_admin() ) {
-        wp_redirect( site_url('wp-admin') );
-        exit();
-    }
-}
-
-add_action('init', 'redirectToBackEnd');
-
-/**
  * Removes admin bar likns
  */
 function removeAdminBarLinks() {
