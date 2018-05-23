@@ -22,7 +22,7 @@ production_deploy:
     paths:
       - build/
   only:
-    - provisioning
+    - master
   script:
     - php composer.phar install
     - cp .env.example .env
