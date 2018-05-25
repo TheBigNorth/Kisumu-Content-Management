@@ -129,6 +129,7 @@ if (IS_MULTISITE) {
 
 	define('COOKIE_DOMAIN', $_SERVER['HTTP_HOST']);
 	define('ADMIN_COOKIE_PATH', '/');
+	define('WP_DEFAULT_THEME', 'headless');
 }
 
 /**
