@@ -16,6 +16,8 @@ before_script:
   - mkdir -p ~/.ssh
   - eval $(ssh-agent -s)
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  - find . -type f -exec chmod 644 {} \;
+  - find . -type d -exec chmod 755 {} \;
 
 production_deploy:
   artifacts:
@@ -41,3 +43,4 @@ production_deploy:
     - rsync -av -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress . $SERVER_USER@$SERVER_HOST:/var/www/html_tmp/
     - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo mv /var/www/html /var/www/html_old && sudo mv /var/www/html_tmp /var/www/html"
     - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo rm -rf /var/www/html_old"
+    - ssh -p22 $SERVER_USER@$SERVER_HOST "sudo chown -R www-data:ubuntu /var/www/html"
