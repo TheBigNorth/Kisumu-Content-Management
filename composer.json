@@ -30,7 +30,8 @@
         "wpackagist-plugin/ilab-media-tools": "2.1.0",
         "advanced-custom-fields/advanced-custom-fields-pro": "*",
         "wpackagist-plugin/simple-image-sizes":"3.2.0",
-        "wpackagist-plugin/acf-to-rest-api":"3.1.0"
+        "wpackagist-plugin/acf-to-rest-api":"3.1.0",
+        "wpackagist-plugin/acf-option-pages":"1.1.0"
     },
     "extra": {
         "wordpress-install-dir": "public/wordpress",
