@@ -22,3 +22,21 @@ function removeActionRows( $actions )
 
 add_filter( 'post_row_actions', 'removeActionRows', 10, 1 );
 add_filter( 'page_row_actions', 'removeActionRows', 10, 1 );
+
+/**
+ * Get ACF to return null for no data and not false
+ * This also helps with GraphQL
+ */
+function nullify_empty($value, $post_id, $field)
+{
+    if (empty($value)) {
+        return null;
+    }
+
+    return $value;
+}
+
+add_filter('acf/format_value/type=image', 'nullify_empty', 100, 3);
+add_filter('acf/format_value/type=relationship', 'nullify_empty', 100, 3);
+add_filter('acf/format_value/type=gallery', 'nullify_empty', 100, 3); 
+add_filter('acf/format_value/type=repeater', 'nullify_empty', 100, 3);
