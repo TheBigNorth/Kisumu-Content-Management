@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "johnpbloch/wordpress": "~4",
+        "johnpbloch/wordpress": "4.8.*",
         "wpackagist-plugin/wordpress-seo": "7.*",
         "vlucas/phpdotenv": "^2.4",
         "wpackagist-plugin/custom-post-type-ui": "1.5.*",
@@ -32,7 +32,8 @@
         "wpackagist-plugin/simple-image-sizes":"3.2.0",
         "wpackagist-plugin/acf-to-rest-api":"3.1.0",
         "wpackagist-plugin/acf-option-pages":"1.1.0",
-        "wpackagist-plugin/add-custom-page-template":"1.0"
+        "wpackagist-plugin/add-custom-page-template":"1.0",
+        "kodefant/littlebot-netlify": "0.*"
     },
     "extra": {
         "wordpress-install-dir": "public/wordpress",
