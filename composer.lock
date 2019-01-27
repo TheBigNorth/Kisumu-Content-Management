@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bffbbfac75da2eb011a8d37a38d2d3f",
+    "content-hash": "9b65b821d893ede7c73e59e9a988faef",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -407,6 +407,20 @@
                 "environment"
             ],
             "time": "2018-10-30T17:29:25+00:00"
+        },
+        {
+            "name": "wp-webhook-deploy-netlify/wp-webhook-deploy-netlify",
+            "version": "5.6.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/lukethacoder/wp-webhook-deploy-netlify/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "wpackagist-plugin/acf-option-pages",
