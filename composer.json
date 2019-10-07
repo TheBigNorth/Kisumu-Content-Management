@@ -35,6 +35,21 @@
                     "composer/installers": "^1.0"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wp-api-yoast-meta/wp-api-yoast-meta",
+                "version": "0.0.1",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/gemmadlou/wp-api-yoast-meta/archive/master.zip"
+                },
+                "require": {
+                    "composer/installers": "^1.0"
+                }
+            }
         }
     ],
     "require": {
@@ -49,7 +64,8 @@
         "wpackagist-plugin/acf-option-pages":"1.1.0",
         "wpackagist-plugin/add-custom-page-template":"1.0",
         "kodefant/littlebot-netlify": "0.*",
-        "wp-webhook-deploy-netlify/wp-webhook-deploy-netlify": "*"
+        "wp-webhook-deploy-netlify/wp-webhook-deploy-netlify": "*",
+        "wp-api-yoast-meta/wp-api-yoast-meta": "*"
     },
     "extra": {
         "wordpress-install-dir": "public/wordpress",

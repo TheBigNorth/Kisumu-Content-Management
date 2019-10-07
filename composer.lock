@@ -4,16 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b65b821d893ede7c73e59e9a988faef",
+    "content-hash": "979b97feb373012f95590e480f3ae89b",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
             "version": "5.6.10",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.6.10",
-                "reference": null,
-                "shasum": null
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.6.10"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -23,16 +21,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+                "reference": "141b272484481432cda342727a427dc1e206bfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
+                "reference": "141b272484481432cda342727a427dc1e206bfa0",
                 "shasum": ""
             },
             "require": {
@@ -88,6 +86,7 @@
                 "RadPHP",
                 "SMF",
                 "Thelia",
+                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
@@ -110,6 +109,7 @@
                 "installer",
                 "itop",
                 "joomla",
+                "known",
                 "kohana",
                 "laravel",
                 "lavalite",
@@ -139,26 +139,26 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-08-27T06:10:37+00:00"
+            "time": "2019-08-12T15:00:31+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.8.8",
+            "version": "4.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "e885a820268a8f7f5261fcd8435b259f5b82577c"
+                "reference": "32757f4b209b3cd0030445052a4f984feb6b5b1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/e885a820268a8f7f5261fcd8435b259f5b82577c",
-                "reference": "e885a820268a8f7f5261fcd8435b259f5b82577c",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/32757f4b209b3cd0030445052a4f984feb6b5b1b",
+                "reference": "32757f4b209b3cd0030445052a4f984feb6b5b1b",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.8.8",
+                "johnpbloch/wordpress-core": "4.8.10",
                 "johnpbloch/wordpress-core-installer": "^1.0",
-                "php": ">=5.3.2"
+                "php": ">=5.6.20"
             },
             "type": "package",
             "notification-url": "https://packagist.org/downloads/",
@@ -171,34 +171,34 @@
                     "homepage": "http://wordpress.org/about/"
                 }
             ],
-            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
             "homepage": "http://wordpress.org/",
             "keywords": [
                 "blog",
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-12-13T03:43:15+00:00"
+            "time": "2019-09-05T01:02:42+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.8.8",
+            "version": "4.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "5102108895b07eb1d2f5d81796c3cd757cb6b6c9"
+                "reference": "4f3e20ecb4e8bcd5d8329a53da8688e5c2367572"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/5102108895b07eb1d2f5d81796c3cd757cb6b6c9",
-                "reference": "5102108895b07eb1d2f5d81796c3cd757cb6b6c9",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4f3e20ecb4e8bcd5d8329a53da8688e5c2367572",
+                "reference": "4f3e20ecb4e8bcd5d8329a53da8688e5c2367572",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.8.8"
+                "wordpress/core-implementation": "4.8.10"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -211,14 +211,14 @@
                     "homepage": "http://wordpress.org/about/"
                 }
             ],
-            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
             "homepage": "http://wordpress.org/",
             "keywords": [
                 "blog",
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-12-13T03:43:10+00:00"
+            "time": "2019-09-05T01:02:38+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -359,21 +359,80 @@
             "time": "2016-07-20T10:19:36+00:00"
         },
         {
-            "name": "vlucas/phpdotenv",
-            "version": "v2.5.2",
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36"
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/cfd5dc225767ca154853752abc93aeec040fcf36",
-                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2019-08-06T08:03:45+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.0"
@@ -381,7 +440,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -406,16 +465,26 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-10-30T17:29:25+00:00"
+            "time": "2019-01-29T11:11:52+00:00"
+        },
+        {
+            "name": "wp-api-yoast-meta/wp-api-yoast-meta",
+            "version": "0.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/gemmadlou/wp-api-yoast-meta/archive/master.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "wp-webhook-deploy-netlify/wp-webhook-deploy-netlify",
             "version": "5.6.10",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/lukethacoder/wp-webhook-deploy-netlify/archive/master.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/lukethacoder/wp-webhook-deploy-netlify/archive/master.zip"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -432,9 +501,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-option-pages.1.1.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/acf-option-pages.1.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -452,9 +519,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-to-rest-api.3.1.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/acf-to-rest-api.3.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -472,9 +537,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/add-custom-page-template.zip?timestamp=1464001032",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/add-custom-page-template.zip?timestamp=1464001032"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -492,9 +555,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.8.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -512,9 +573,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ilab-media-tools.2.1.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/ilab-media-tools.2.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -532,9 +591,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-image-sizes.3.2.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/simple-image-sizes.3.2.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -552,9 +609,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.9.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
